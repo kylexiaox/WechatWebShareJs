@@ -4,3 +4,6 @@ steps:
 1.add wechat public account configure in configue file
 2.run server in tornado and it will auto generate a wechat js file
 3.import this js and wechat jssdk 
+
+
+PS: NEED TO ADD TYPE(TEXT_PLAIN AND TEXT_HTML) IN PYRESTFUL 
