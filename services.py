@@ -37,14 +37,14 @@ class Auth(object):
         try:
              self.js = u"var signature;" \
                   "if(window.location.search=='?from=groupmessage&isappinstalled=0')" \
-                  "signature = '{self.signature1}';" \
+                  "signature = {self.signature1};" \
                   "else if(window.location.search=='?from=singlemessage&isappinstalled=0')" \
                   "signature = '{self.signature2}';" \
                   "else if(window.location.search=='?from=timeline&isappinstalled=0')" \
                   "signature = '{self.signature3}';" \
                   "" \
                   "wx.config({{" \
-                  "debug: '{self.debug}'," \
+                  "debug: {self.debug}," \
                   "appId: '{self.appId}'," \
                   "timestamp: {self.timestamp}, " \
                   "nonceStr: '{self.nonceStr}', " \

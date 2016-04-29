@@ -44,7 +44,7 @@ class Config(object):
             self.nonceStr = load["nonceStr"]
         jsApiList = load["jsApiList"]
         for j in jsApiList:
-            self.jsApiList.append(j.encode('utf-8'))
+            self.jsApiList.append(j.decode('utf-8'))
         self.url = load["url"]
         self.title = load["title"]
         self.subtitle = load["subtitle"]
