@@ -1,10 +1,10 @@
-{"debug":"false",
- "appId":"wx4bde58d7b10ffa98",
- "secret":"93a4af07901b14b9d89534f32f2a0d6d",
+{"debug":"",
+ "appId":"",
+ "secret":"",
  "nonceStr":"",
  "jsApiList":["onMenuShareTimeline","onMenuShareAppMessage"],
- "url":"www.migugk.com/activity/h5/mypoems.html",
- "title":"G客·Club第一期|《我的诗篇》看片会坐席预约申领开始啦！",
- "subtitle":"在这个“除诗歌外，文体不限”的时代，诗，却在陪伴着他们。",
- "link":"http://www.migugk.com/activity/h5/mypoems.html",
- "imgUrl":"http://www.migugk.com/activity/h5/mypoems.jpg"}
+ "url":"",
+ "title":"",
+ "subtitle":"",
+ "link":"",
+ "imgUrl""}
