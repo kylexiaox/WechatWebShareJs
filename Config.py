@@ -1,7 +1,8 @@
 __author__ = 'kyle_xiao'
 
 import json
-
+import random
+import string
 
 class Config(object):
     debug = str
@@ -37,12 +38,19 @@ class Config(object):
         self.debug = load["debug"]
         self.appId = load["appId"]
         self.secret = load["secret"]
-        self.nonceStr = load["nonceStr"]
-        self.jsApiList = load["jsApiList"]
+        if load["nonceStr"] == "":
+            self.nonceStr = self.__create_nonce_str()
+        else:
+            self.nonceStr = load["nonceStr"]
+        jsApiList = load["jsApiList"]
+        for j in jsApiList:
+            self.jsApiList.append(j.encode('utf-8'))
         self.url = load["url"]
         self.title = load["title"]
         self.subtitle = load["subtitle"]
         self.imgUrl = load["imgUrl"]
         self.link = load["link"]
 
+    def __create_nonce_str(self):
+        return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(15))
 

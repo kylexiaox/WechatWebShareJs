@@ -26,7 +26,7 @@ if __name__ == '__main__':
         print "Start the service"
         service = [WechatShareResource]
         app = pyrestful.rest.RestService(service)
-        app.listen(8080)
+        app.listen(8765)
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         print "\nStop the service"

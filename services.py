@@ -29,7 +29,7 @@ class Auth(object):
         generate new signature and new JS.
 
         """
-        self.config.timestamp = time.time()
+        self.config.timestamp = int(time.time())
         signGenerator = AccessTicket(self.config.timestamp,self.config.appId,self.config.secret,self.config.nonceStr)
         self.config.signature1 = signGenerator.sign(self.config.url+"?from=groupmessage&isappinstalled=0")
         self.config.signature2 = signGenerator.sign(self.config.url+"?from=singlemessage&isappinstalled=0")
@@ -44,12 +44,12 @@ class Auth(object):
                   "signature = '{self.signature3}';" \
                   "" \
                   "wx.config({{" \
-                  "debug: false," \
+                  "debug: '{self.debug}'," \
                   "appId: '{self.appId}'," \
-                  "timestamp: {self.timestamp!s}, " \
+                  "timestamp: {self.timestamp}, " \
                   "nonceStr: '{self.nonceStr}', " \
                   "signature: signature," \
-                  "jsApiList: {self.jsApiList!r}" \
+                  "jsApiList: {self.jsApiList}" \
                   "}});" \
                   "" \
                   "wx.ready(function(){{" \
@@ -64,7 +64,7 @@ class Auth(object):
                   "" \
                   "}}" \
                   "}});" \
-                  " wx.onMenuShareAppMessage({{" \
+                  "wx.onMenuShareAppMessage({{" \
                   "title: '{self.title}'," \
                   "desc: '{self.subtitle}'," \
                   "link: '{self.url}'," \
@@ -78,7 +78,7 @@ class Auth(object):
                   "" \
                   "}}" \
                   "}});"\
-                  "}}" \
+                  "}})" \
                  .format(self = self.config)
         except StandardError, e:
             logging.exception(e)
