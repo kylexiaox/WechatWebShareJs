@@ -9,6 +9,7 @@ steps:
 PS: NEED TO ADD TYPE(TEXT_PLAIN AND TEXT_HTML) IN PYRESTFUL 
 
 
+
 ABOUT CONFIG:
 
 {"debug":"",                                                       # "true", "false"
@@ -16,7 +17,7 @@ ABOUT CONFIG:
  "secret":"",                                                      # wechat public SECRET
  "nonceStr":"",                                                    # RANDOM STRING, IF EMPTY, IT WILL AUTO GENERATE ONE
  "jsApiList":["onMenuShareTimeline","onMenuShareAppMessage"],      # API LIST
- "url":"www.migugk.com/activity/h5/mypoems.html",                  # URL WITH PREFIX "http://" or "https://"
+ "url":"",                                                         # URL WITH PREFIX "http://" or "https://"
  "title":"",                                                       # TITLE OF THE WEBSITE
  "subtitle":"",                                                    # ABSTRACT OF THE WEBSITE
  "link":"",                                                        # REF LINK
