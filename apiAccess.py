@@ -58,6 +58,5 @@ class AccessTicket(object):
         """
         self.ret["url"] = url
         string = '&'.join(['%s=%s' % (key.lower(), self.ret[key]) for key in sorted(self.ret)])
-        print string
-        signature =  hashlib.sha1(string.encode('ascii')).hexdigest()
+        signature = hashlib.sha1(string.encode('ascii')).hexdigest()
         return signature
