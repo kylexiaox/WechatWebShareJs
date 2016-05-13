@@ -57,7 +57,7 @@ class Auth(object):
         try:
              currentConfig["js"] = u"var signature;" \
                   "if(window.location.search=='?from=groupmessage&isappinstalled=0')" \
-                  "signature = {signature1};" \
+                  "signature = '{signature1}';" \
                   "else if(window.location.search=='?from=singlemessage&isappinstalled=0')" \
                   "signature = '{signature2}';" \
                   "else if(window.location.search=='?from=timeline&isappinstalled=0')" \
