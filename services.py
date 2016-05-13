@@ -3,7 +3,7 @@ __author__ = 'kyle_xiao'
 import time
 from apiAccess import AccessTicket
 import logging
-from Config import Config
+from config import Config
 
 def singleton(cls, *args, **kw):
     instances = {}
