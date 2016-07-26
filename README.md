@@ -9,7 +9,6 @@ steps:
 PS: NEED TO ADD TYPE(TEXT_PLAIN AND TEXT_HTML) IN PYRESTFUL 
 
 
-
 ABOUT CONFIG:
 
 {"debug":"",                                                       # "true", "false"
@@ -22,3 +21,5 @@ ABOUT CONFIG:
  "subtitle":"",                                                    # ABSTRACT OF THE WEBSITE
  "link":"",                                                        # REF LINK
  "imgUrl":""}                                                      # IMG URL
+
+ 
