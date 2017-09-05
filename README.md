@@ -11,7 +11,7 @@ PS: NEED TO ADD TYPE(TEXT_PLAIN AND TEXT_HTML) IN PYRESTFUL
 
 ABOUT CONFIG:
 
-{"debug":"",                                                       # "true", "false"
+`{"debug":"",                                                       # "true", "false"
  "appId":"",                                                       # wechat public APPID
  "secret":"",                                                      # wechat public SECRET
  "nonceStr":"",                                                    # RANDOM STRING, IF EMPTY, IT WILL AUTO GENERATE ONE
@@ -20,6 +20,5 @@ ABOUT CONFIG:
  "title":"",                                                       # TITLE OF THE WEBSITE
  "subtitle":"",                                                    # ABSTRACT OF THE WEBSITE
  "link":"",                                                        # REF LINK
- "imgUrl":""}                                                      # IMG URL
-
+ "imgUrl":""}                                                      # IMG URL`
  
